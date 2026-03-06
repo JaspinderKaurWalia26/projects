@@ -60,7 +60,7 @@ class EmbeddingManager:
 
         try:
             logger.info(f"Generating embeddings for {len(texts)} texts")
-            embeddings = self.model.encode(texts, show_progress_bar=True)
+            embeddings = self.model.encode(texts, show_progress_bar=False)
             logger.info("Embeddings generated successfully")
             return embeddings
 

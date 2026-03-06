@@ -45,7 +45,6 @@ def rag_with_system_prompt(
     """
 
     # Retrieve context from ChromaDB
-    logger.info(f"Retrieving top {top_k} documents for query: {query[:50]}...")
     docs = retriever.retrieve(query, top_k)
 
     if not docs:
